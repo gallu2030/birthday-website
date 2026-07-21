@@ -9,6 +9,7 @@ const photos = [
   "photo2.jpg",
   "photo3.jpg"
 ];
+
 const captions = [
   "✨ Some people become a beautiful chapter in our life without even trying... You're one of them. ❤️",
   "🌸 May today bring you as much happiness as your smile brings to everyone around you.",
@@ -17,10 +18,14 @@ const captions = [
 ];
 
 const caption = document.getElementById("caption");
-let i = 0;
 
+let i = 0;
+let slideShow;
 
 btn.onclick = () => {
+
+  clearInterval(slideShow);
+
   music.currentTime = 0;
   music.play();
 
@@ -30,24 +35,27 @@ btn.onclick = () => {
   slider.src = photos[0];
   caption.innerHTML = captions[0];
 
-  const slideShow = setInterval(() => {
+  btn.innerHTML = "❤️ Enjoy Your Surprise ❤️";
+
+  slideShow = setInterval(() => {
+
     i++;
 
     if (i >= photos.length) {
       clearInterval(slideShow);
 
-      // Slideshow khatam hote hi music bhi band
       music.pause();
       music.currentTime = 0;
 
+      btn.innerHTML = "🎂 Once Again, Happy Birthday ❤️";
       return;
     }
 
     slider.src = photos[i];
     caption.innerHTML = captions[i];
-  }, 2500);
 
-  btn.innerHTML = "❤️ Enjoy Your Surprise ❤️";
+  }, 5000);
+
 };
 
 window.onload = () => {
