@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e8);
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+button{
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
