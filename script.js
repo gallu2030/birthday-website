@@ -19,19 +19,30 @@ const captions = [
 const caption = document.getElementById("caption");
 let i = 0;
 
+
 btn.onclick = () => {
   music.currentTime = 0;
   music.play();
 
-  setTimeout(() => {
-    music.pause();
-    music.currentTime = 0;
-  }, 20000);
-
   alert("🎉 Happy Birthday! Wishing you endless happiness ❤️");
 
-  setInterval(() => {
-    i = (i + 1) % photos.length;
+  i = 0;
+  slider.src = photos[0];
+  caption.innerHTML = captions[0];
+
+  const slideShow = setInterval(() => {
+    i++;
+
+    if (i >= photos.length) {
+      clearInterval(slideShow);
+
+      // Slideshow khatam hote hi music bhi band
+      music.pause();
+      music.currentTime = 0;
+
+      return;
+    }
+
     slider.src = photos[i];
     caption.innerHTML = captions[i];
   }, 2500);
