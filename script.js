@@ -9,7 +9,14 @@ const photos = [
   "photo2.jpg",
   "photo3.jpg"
 ];
+const captions = [
+  "✨ Some people become a beautiful chapter in our life without even trying... You're one of them. ❤️",
+  "🌸 May today bring you as much happiness as your smile brings to everyone around you.",
+  "🌙 Keep smiling, keep shining, and never stop being the wonderful person you are.",
+  "🎂 Happy Birthday! I hope this little surprise brings a smile to your face. Always stay happy. ❤️"
+];
 
+const caption = document.getElementById("caption");
 let i = 0;
 
 btn.onclick = () => {
