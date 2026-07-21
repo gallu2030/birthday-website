@@ -14,6 +14,13 @@ let i = 0;
 
 btn.onclick = () => {
 music.play();
+  music.currentTime = 0;
+music.play();
+
+setTimeout(() => {
+  music.pause();
+  music.currentTime = 0;
+}, 15000);
 
 alert("🎉 Happy Birthday! Wishing you endless happiness ❤️");
 
