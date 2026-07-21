@@ -25,3 +25,37 @@ button{
     cursor:pointer;
     font-size:18px;
 }
+body{
+transition:1s;
+opacity:0;
+background:#ffe6f2;
+text-align:center;
+font-family:Arial;
+}
+
+img{
+width:260px;
+height:260px;
+border-radius:20px;
+object-fit:cover;
+box-shadow:0 0 20px pink;
+margin:20px;
+}
+
+button{
+padding:15px 25px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ff4d88;
+color:white;
+cursor:pointer;
+}
+
+h1{
+color:#ff0066;
+}
+
+h2{
+color:#444;
+}
