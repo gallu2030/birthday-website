@@ -26,7 +26,7 @@ btn.onclick = () => {
   setTimeout(() => {
     music.pause();
     music.currentTime = 0;
-  }, 12000);
+  }, 20000);
 
   alert("🎉 Happy Birthday! Wishing you endless happiness ❤️");
 
