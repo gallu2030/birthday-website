@@ -1,16 +1,13 @@
-// Birthday Website Script
-
+// Birthday Website Scri
 const music = document.getElementById("music");
 const btn = document.getElementById("playBtn");
 
-if (btn) {
-  btn.addEventListener("click", () => {
-    music.play();
-    btn.innerHTML = "🎵 Playing...";
-  });
-}
+btn.addEventListener("click", () => {
+  music.play();
+  alert("🎉 Happy Birthday! ❤️");
+  btn.innerHTML = "🎵 Playing...";
+});
 
-// Simple animation on load
 window.onload = () => {
   document.body.classList.add("loaded");
 };
