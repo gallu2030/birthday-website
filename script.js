@@ -33,6 +33,7 @@ btn.onclick = () => {
   setInterval(() => {
     i = (i + 1) % photos.length;
     slider.src = photos[i];
+    caption.innerHTML = captions[i];
   }, 2500);
 
   btn.innerHTML = "❤️ Enjoy Your Surprise ❤️";
